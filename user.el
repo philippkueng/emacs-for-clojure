@@ -61,5 +61,12 @@
 
 (setq ido-use-filename-at-point nil)
 
+;; Keybindings (to make Emacs work with a Swiss-German keyboard)
+(setq default-input-method "MacOSX")
+(setq mac-command-modifier 'meta
+      mac-option-modifier nil
+      mac-allow-anti-aliasing t
+      mac-command-key-is-meta t)
+
 ;; Save here instead of littering current directory with emacs backup files
 (setq backup-directory-alist `(("." . "~/.saves")))
